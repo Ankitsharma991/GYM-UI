@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <style>
+      #form {
+        background-color: hsla(266, 3%, 41%, 0.125);
+        margin-top: 50px;
+        border-radius: 30px;
+        padding: 20px;
+        color: white;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body style="background-image: url(./2.jpeg); background-repeat: no-repeat;">
+    <nav class="navbar navbar-expand-lg ">
+      <div>
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="logo2.png"
+            width="120"
+            height="80"
+            alt=""
+            style="background-color: black"
+          />
+        </a>
+      </div>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto justify-content-center mx-5 p-3">
+          <li class="nav-item active">
+            <a class="nav-link text-light font-weight-bold p-2 h4" href="./index.html"
+              >Home <span class="sr-only"></span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light font-weight-bold mx-4 p-2 h4" href="#Package"
+              >Packages</a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-light font-weight-bold mx-4 p-2 h4" href="#team"
+              >Our Team<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-light font-weight-bold mx-4 p-2 h4" href="./bmi.html"
+              >Your BMI<span class="sr-only"></span></a
+            >
+          </li>
+                    <li class="nav-item active">
+            <a class="nav-link text-light font-weight-bold mx-4 p-2 h4" href="./game.html"
+              >Play Games<span class="sr-only"></span></a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-light justify-content-center font-weight-bold mx-4 p-2 h4"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dashboard
+            </a>
+            <div
+              class="dropdown-menu bg-transparent"
+              aria-labelledby="navbarDropdown"
+            >
+              <a
+                class="dropdown-item font-weight-bold bg-dark text-success"
+                href="./login.html"
+                >Admin</a
+              >
+              <a
+                class="dropdown-item font-weight-bold bg-dark text-success"
+                href="./login.html"
+                >Tranier</a
+              >
+              <a
+                class="dropdown-item font-weight-bold bg-dark text-success"
+                href="./login.html"
+                >Trainee</a
+              >
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item font-weight-bold bg-warning text-success"
+                href="#"
+                >Payment</a
+              >
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-light font-weight-bold h3" href="#contactandQ"
+              ><button class="btn-success p-2" style="margin:0 9rem;">Contact and Query</button></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+<!-- registrations -->
+<div class="" style="margin-bottom: 20rem;">
+    <div class="container" style="margin-left: 5rem; height: 50%">
+      <div class="row">
+        <div class="col-md-5">
+          <div id="form" class="text-center">
+            <form>
+              <h2 style="border-bottom: 2px solid red">New Registrations!!</h2>
+              <hr />
+              <div class="form-group bg-transparent">
+                <label for="exampleInputName">Name</label>
+                <input
+                  type="text"
+                  class="form-control bg-transparent text-warning font-weight-bold"
+                  id="exampleInputName"
+                  placeholder="Enter your name :"
+                  required
+                />
+              </div>
+              <div class="form-group bg-transparent">
+                <label for="exampleInputContact">Phone Number</label>
+                <input
+                  type="Number"
+                  class="form-control bg-transparent text-warning font-weight-bold"
+                  id="exampleInputPhone"
+                  placeholder="+91-xxxxxxxxxx"
+                  required
+                />
+              </div>
+              <div class="form-group bg-transparent">
+                <label for="exampleInputEmail1">Email address</label>
+                <input
+                  type="email"
+                  class="form-control bg-transparent text-warning font-weight-bold"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                  required
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input
+                  type="password"
+                  class="form-control bg-transparent text-warning font-weight-bold"
+                  id="exampleInputPassword1"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputCPassword1">Confirm Password</label>
+                <input
+                  type="password"
+                  class="form-control bg-transparent text-warning font-weight-bold"
+                  id="exampleInputCPassword1"
+                  placeholder="Confirm Password"
+                  required
+                />
+              </div>
+              <div class="form-group form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                  required
+                />
+                <label class="form-check-label" for="exampleCheck1" required
+                  >Check me out</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Register</button>
+              <input
+                class="btn btn-primary"
+                type="reset"
+                value="Reset"
+                style="margin-right: 0"
+              />
+            </form>
+          </div>
+        </div>
+        <div class="col-md-7"></div>
+      </div>
+    </div>
+</div>
+
+<!-- packages and discounts -->
+<div style="margin-top: -10%; background-color: hsl(180, 48%, 78%);" id="Package">
+      <div style="display: inline; border: 2px solid green;">
+      <div style="margin: 140px 75%; height:75%; border:2px solid red; width:20%; color: white; border-radius: 5px 30px 5px 30px; position: absolute; background: rgb(25, 46, 37);">
+<b>
+<p>
+  <h2 style="text-align: center; border-bottom:4px solid red;background-color: rgb(47, 44, 40); padding: 2rem;"><b class="text-light">Our <span style="color: blue;"> Features</span></b></h2>
+  <ul style="padding: 2rem;">
+    <li style="padding: 0.6rem;">Always open for business</li>
+    <li style="padding: 0.6rem;">Large facility with lots of space</li>
+    <li style="padding: 0.6rem;">Monthly membership is middle-range for price</li>
+    <li style="padding: 0.6rem;">Extensive features and services</li>
+    <li style="padding: 0.6rem;">High-Quality Exercise Equipment</li>
+    <li style="padding: 0.6rem;">High-Quality Exercise Equipment</li>
+    <li style="padding: 0.6rem;">Personal Training Services.</li>
+    <li style="padding: 0.6rem;">Thriving Community. </li>
+    <li style="padding: 0.6rem;">Membership E-card </li>
+    <li style="padding: 0.6rem;">Variety of Training and Much more</li>
+  </ul>
+</p>
+</b>
+      </div>
+      <div id="Package">
+      <h2 class="font-weight-bold bg-danger" style="text-align: center;">Our Packages and Features</h2>
+    <div class="card-deck" style="display: grid; margin:2rem 2rem; grid-template-columns: repeat(3, 0.5fr); width: 60%; column-gap: -2rem; row-gap: 2rem; height: 100%;">
+      <div class="card" style="height: 500px; width:400px;background-color: #316965;">
+        <img src="muscles.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold text-info"> <b> ABS-Special (30%-Discount)</b></h5>
+          <p class="card-text">
+            This is a longer card with supporting text below as a natural
+            lead-in to additional content. This content is a little bit longer.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+          <button class="bg-primary font-weight-bold">Enroll Now</button>
+        </div>
+      </div>
+            <div class="card" style="height: 500px; width:400px;background-color: #316965;">
+        <img src="muscles5.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold text-info"> <b> Thigh-Special (25%-Discount)</b></h5>
+          <p class="card-text">
+            This is a longer card with supporting text below as a natural
+            lead-in to additional content. This content is a little bit longer.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+          <button class="bg-primary font-weight-bold">Enroll Now</button>
+        </div>
+      </div>
+            <div class="card" style="height: 500px; width:400px;background-color: #316965;">
+        <img src="muscles6.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+         <h5 class="card-title font-weight-bold text-info"> <b> Chin Tuck-Special (20%-Discount)</b></h5>
+          <p class="card-text">
+            This is a longer card with supporting text below as a natural
+            lead-in to additional content. This content is a little bit longer.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+          <button class="bg-primary font-weight-bold">Enroll Now</button>
+        </div>
+      </div>
+            <div class="card" style="height: 500px; width:400px;background-color: #316965;">
+        <img src="muscles1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold text-info"> <b> Chest-Exercise (10%-Discount)</b></h5>
+          <p class="card-text">
+            This is a longer card with supporting text below as a natural
+            lead-in to additional content. This content is a little bit longer.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+          <button class="bg-primary font-weight-bold">Enroll Now</button>
+        </div>
+      </div>
+            <div class="card" style="height: 500px; width:400px;background-color: #316965;">
+        <img src="muscles2.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold text-info"> <b> Shoulder-Special (20%-Discount)</b></h5>
+          <p class="card-text">
+            This is a longer card with supporting text below as a natural
+            lead-in to additional content. This content is a little bit longer.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+          <button class="bg-primary font-weight-bold">Enroll Now</button>
+        </div>
+      </div>
+            <div class="card" style="height: 500px; width:400px; background-color: #316965;">
+        <img src="muscles3.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+         <h5 class="card-title font-weight-bold text-info"> <b> Bull-Back (15%-Discount)</b></h5>
+          <p class="card-text">
+            This is a longer card with supporting text below as a natural
+            lead-in to additional content. This content is a little bit longer.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+          <button class="bg-primary font-weight-bold">Enroll Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Our Teams -->
+  <div id="team">
+ <h2 class="bg-danger font-weight-bold" style="text-align: center;">Our <span style="color: blue;">Team</span></h2>
+    <div class="card-deck" style="display: grid; margin:2rem 20rem; grid-template-columns: repeat(3, 0.5fr);">
+
+            <div class="card" style="height: 480px; width:250px;">
+        <img src="founder.jpeg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold text-info"> <b>Founder</b></h5>
+          <p class="card-text">
+            <p></p>Mr. Founder </p>
+            <p>+91-9865464574</p>
+            <p>founder@gmai.com</p>
+          </p>
+        </div>
+      </div>
+            <div class="card" style="height: 480px; width:250px;">
+        <img src="admin.jpeg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold text-info"> <b>Admin</b></h5>
+          <p class="card-text">
+            <p></p>Mr. Admin </p>
+            <p>+91-9865464574</p>
+            <p>Admin@gmai.com</p>
+          </p>
+        </div>
+      </div>
+            <div class="card" style="height: 480px; width:250px;">
+        <img src="inst.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+         <h5 class="card-title font-weight-bold text-info"> <b>Instructor</b></h5>
+          <p class="card-text">
+            <p></p>Mr. Instructor</p>
+            <p>+91-9865464574</p>
+            <p>Admin@gmai.com</p>
+          </p>
+        </div>
+      </div>
+
+</div>
+    <!-- contact and Query -->
+    <div class="bg-dark h-75" id="contactandQ" style="margin-top: -10%;">
+          <div class="container bg-transparent" style="margin: 18rem 25rem; height: 50%">
+      <div
+        id="form"
+        class="text-center backdrop-filter: blur(5px) text-light"
+        style="border: 2px solid black; border-radius: 24px 8px 24px 8px"
+      >
+        <fieldset>
+          <legend><h3 class="font-weight-bold bg-danger">Query Section</h3></legend>
+
+          <form>
+            <hr />
+            <div class="form-group bg-transparent">
+              <label for="exampleInputName" class="h4 font-weight-bold"
+                >Name</label
+              >
+              <input
+                type="text"
+                class="form-control bg-transparent text-primary font-weight-bold"
+                id="exampleInputName"
+                placeholder="Enter your name :"
+                required
+              />
+            </div>
+            <div class="form-group bg-transparent">
+              <label for="exampleInputPhone" class="h4 font-weight-bold"
+                >Phone Number</label
+              >
+              <input
+                type="number"
+                class="form-control bg-transparent text-primary font-weight-bold"
+                id="exampleInputAddress"
+                placeholder="Enter your Phone"
+              />
+            </div>
+            <div class="form-group bg-transparent">
+              <label for="exampleInputEmail1" class="h4 font-weight-bold"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control bg-transparent text-primary font-weight-bold"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+                required
+              />
+              <small
+                id="emailHelp"
+                class="form-text text-muted font-weight-bold"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+            <div class="form-group">
+              <label
+                for="exampleFormControlTextarea1"
+                class="h4 font-weight-bold"
+                >Your Query Here
+              </label>
+              <textarea
+                class="form-control bg-transparent text-primary font-weight-bold"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Enter Your Query Here ..."
+              ></textarea>
+            </div>
+            <div class="form-group form-check font-weight-bold">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+                required
+              />
+              <label class="form-check-label" for="exampleCheck1" required
+                >Check me out</label
+              >
+            </div>
+            <button type="submit" class="btn btn-info">Submit</button>
+            <input
+              class="btn btn-info"
+              type="reset"
+              value="Reset"
+              style="margin-right: 0"
+            />
+          </form>
+        </fieldset>
+
+      </div>
+      <div class="col-md-7"></div>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7879.358935528968!2d76.48508907588958!3d9.092935723905997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0602e90737c955%3A0x2a8cdd448f63636b!2sAmritapuri%2C%20Vallikavu%2C%20Kerala%20690546!5e0!3m2!1sen!2sin!4v1655742408403!5m2!1sen!2sin" width="100%" height="450" style="border:0;margin-top: -10%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"
+  ></script>
+</html>

@@ -1,0 +1,159 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+     :root {
+        --main-color: #000000;
+        --color-dark: #00dffc;
+        --text-grey: #8390A2;
+    }
+   
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style-type: none;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .sidebar {
+        width: 345px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background: var(--main-color);
+        z-index: 100;
+    }
+    
+    .sidebar-brand {
+        height: 90px;
+        padding: 1rem 0rem 1rem 2rem;
+        color: #fff;
+    }
+    
+    .sidebar-brand span {
+        display: inline-block;
+        padding-right: 1rem;
+    }
+    
+    .sidebar-menu {
+        margin-top: 1rem;
+    }
+    
+    .sidebar-menu li {
+        width: 100%;
+        margin-bottom: 1.7rem;
+        padding-left: 1rem;
+    }
+    
+    .sidebar-menu a {
+        display: block;
+        color: #fff;
+        font-size: 1.1rem;
+        padding-left: 1rem;
+    }
+    
+    .sidebar-menu a span:first-child {
+        font-size: 1.5rem;
+        padding-right: 1rem;
+    }
+    
+    .sidebar-menu a.active {
+        background: #fff;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        color: var(--main-color);
+        border-radius: 30px 0px 0px 30px;
+    }
+    
+    .main-content {
+        margin-left: 345px;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 1.5rem;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+        position: sticky;
+        left: 345px;
+        width: calc(100%-345px);
+        top: 0;
+        z-index: 100;
+        height: 10vh;
+        background-color: rgb(97, 118, 118);
+    }
+    
+    header h1 {
+        color: #222;
+    }
+    
+    header label span {
+        font-size: 1.7rem;
+        padding-right: 1rem;
+    }
+    
+    .search-wrapper {
+        border: 1px solid #ccc;
+        border-radius: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        overflow-x: hidden;
+    }
+    
+    .search-wrapper span {
+        display: inline-block;
+        padding: 0rem 1rem;
+        font-size: 1.5rem;
+    }
+    
+    .search-wrapper input {
+        height: 100%;
+        padding: 0.5rem;
+        border: none;
+        outline: none;
+        background-color: antiquewhite;
+    }
+    
+    .sidebar-menu {
+        margin-top: 1rem;
+    }
+    
+    .user-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    
+    .user-wrapper img {
+        border-radius: 50%;
+        margin-right: 1rem;
+    }
+    
+    .user-wrapper h4 {
+        margin-bottom: 0rem !important;
+    }
+    
+    .user-wrapper small {
+        display: inline-block;
+        color: var(--text-grey);
+    }
+    
+    main {
+        padding: 2rem 1.5rem;
+        background: #ccc;
+        min-height: 100vh;
+    }
+    
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 0.5fr);
+        grid-gap: 1rem;
+
+    }
+    
+    .card-single {
+        display: flex;
+        justify-content: space-between;
+        background: #fff;
+        height: 4rem;
+    }
